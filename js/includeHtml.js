@@ -85,11 +85,11 @@ function includeModal() {
 								<ul>
 									<li>
 										<span>~ 2022</span>
-										<span><a href="https://sunilife.github.io/portfolio/index.htmls" target="_self">https://sunilife.github.io/portfolio/index.html</a></span>
+										<span><a href="https://sunilife.github.io/portfolio/index.html" target="_self">https://sunilife.github.io/portfolio/index.html</a></span>
 									</li>
 									<li>
 										<span>~ 2015</span>
-										<span><a href="http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal">http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal</a></span>
+										<span><a href="http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal" target="_blank">http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal</a></span>
 									</li>
 								</ul>
 							</div>
