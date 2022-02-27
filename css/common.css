@@ -103,6 +103,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .noScript{margin:10px;text-align:center;background:#adb9c4;color:#fff;display:block; height:40px;line-height:40px}
 
+body{ background-image: url(../img/bg.svg); background-repeat: no-repeat; background-position:top left; }
 
 /* header */
 .header{ text-align: center; transition: .1s; position: fixed; width: 100%; top: 0; z-index: 7; 
@@ -141,7 +142,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 .footer div{padding: 25px;}
 
 /* contents */
-.contents{ padding: 50px 0; text-align: center; color: #F5F5F5; margin-top: 120px; }
+.contents{ padding-bottom: 50px; text-align: center; color: #F5F5F5; margin-top: 98px; }
 .contents div.wr_cont{ max-width: 1100px; margin: 0 auto; }
 @media (max-width: 576px) {
 	.contents{ margin-top: 0; padding-top: 150px; }
@@ -149,20 +150,32 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 div.wr_cont h2{margin-top: 100px; margin-bottom:30px;color: #67DBC9;}
 
-div.p_about{ text-align: left; padding: 0 10px; }
-div.p_about p{font-size: 5rem; font-weight:bold; line-height: 55px;}
-div.p_about dl{ font-weight: 500; }
-div.p_about dl dt{ color: #67DBC9; }
-div.p_about dl dd{ font-weight: bold; letter-spacing: 1px; }
-div.p_about button.btn_resume{ margin-top: 20px; background-color: #555555; color: #67DBC9; height: 50px; display: flex; align-items: center; justify-content: center;
+/*div.p_about{ text-align: right; padding: 0 10px; background-size: contain;
+background-image: url(../img/me.png); background-repeat: no-repeat; background-position: 30px; }*/
+div.p_about{ text-align: center; padding: 0 10px; padding-top: 60px; }
+div.p_about p.me{ width: 200px; margin: 0 auto; }
+div.p_about p.me img{ width: 100%; }
+div.p_about p.txt{font-size: 35px; font-weight:bold; line-height: 40px;}
+div.p_about div.con{ display: flex; align-items: center; justify-content: center; }
+div.p_about div.con dl{ font-weight: 500; margin: 0 20px; display: flex; }
+div.p_about div.con dl dt{ color: #67DBC9; font-weight: bold; padding-right: 10px; white-space: nowrap; }
+div.p_about div.con dl dd{ font-weight: bold; letter-spacing: 1px; white-space: nowrap; }
+div.p_about button.btn_resume{ margin: 0 auto; margin-top: 20px; background-color: #555555; color: #67DBC9; height: 50px; display: flex; align-items: center; justify-content: center;
 	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6); font-weight: bold; padding: 0 30px; border-radius: 5px;border:rgba(103, 219, 201, .5) solid 1px; }
 div.p_about button.btn_resume img{ margin-left: 10px; margin-top: 1px; }
 div.p_about button.btn_resume:hover{ background-color: #333333; border:rgba(103, 219, 201, .2) solid 1px; }
+@media (max-width: 769px) { 
+div.p_about{ padding-top: 0px; }
+div.p_about button.btn_resume{width: 100%;}
+div.p_about div.con{ display: block; flex-wrap: wrap; }
+div.p_about div.con dl{ display: block; }
+div.p_about div.con dl:last-child{padding-top: 20px;}
+}
 
 div.p_skill{}
 div.p_skill ul{ display: flex; flex-wrap: wrap;}
 div.p_skill ul li{ width: calc(100%/2); }
-div.p_skill ul li div.sbox{border-radius: 5px; min-height: 70px; background-color: #3E3E3E; margin: 10px; display: flex; align-items: center; justify-content: center; }
+div.p_skill ul li div.sbox{border-radius: 5px; min-height: 70px; background-color: #3E3E3E; margin: 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0px 0px 10px rgb(0, 0, 0, .5); }
 div.p_skill ul li div.sbox div.ic_gpro{ display: inline-block; width: 52px; height: 52px; background-image: url(../img/ic_gpro.png); margin-left:20px; }
 div.p_skill ul li div.sbox div.ic_gpro.posi_01{background-position: 0px 0px;}
 div.p_skill ul li div.sbox div.ic_gpro.posi_02{background-position: -52px 0px;}
@@ -179,49 +192,6 @@ div.p_skill ul li div.sbox div.bar span{ position: absolute; left: 0; top:0; rig
 	div.p_skill ul li div.sbox{ display: block; padding-bottom: 10px; }
 	div.p_skill ul li div.sbox div.ic_gpro{margin-left: 0px; margin: 10px 0;}
 	div.p_skill ul li div.sbox div.bar{ margin: 0px 10px; }
-}
-
-
-div.p_Expe{ padding: 0 10px; }
-div.p_Expe div{background-color:#3E3E3E; border-radius: 5px; padding: 40px 30px;}
-/*div.p_Expe table{ width: 100%; }
-div.p_Expe table thead th{ background-color:#282828; font-weight: normal; color: #a2a2a2; padding: 15px 10px; font-weight: bold; }
-div.p_Expe table td{ padding: 15px 10px; vertical-align: top; border-bottom: 1px solid #555555; }
-div.p_Expe table td.t_left{ text-align: left; }*/
-div.p_Expe ul{}
-div.p_Expe ul li{ text-align: left; padding: 20px 0; border-bottom: 0px solid #555555; display: flex; flex-wrap: wrap; align-items: flex-start; position: relative; }
-div.p_Expe ul li:first-child{ padding-top: 20px }
-div.p_Expe ul li::before{ content: ''; display: inline-block; width: 4px; height: 4px; margin-bottom: 3px; margin-right: 10px; margin-top: 10px; background-color: #F5F5F5; border-radius: 2px; }
-div.p_Expe ul li span{ margin-right: 30px; display: inline-block; line-height: 25px; }
-div.p_Expe ul li span:first-child{ font-weight: bold; }
-div.p_Expe ul li span:last-child{ margin-right: 0; }
-div.p_Expe ul li span.c_name{ width: 100px; }
-div.p_Expe ul li span.c_local{ width: 40px; }
-@media (max-width: 576px) {
-	div.p_Expe div{padding: 20px;}
-	div.p_Expe ul li{ padding-top: 0;}
-	div.p_Expe ul li:first-child{ padding-top: 0; }
-	div.p_Expe ul li:last-child{ padding-bottom: 0; }
-	div.p_Expe ul li::before{ margin-bottom: 3px; margin-right: 10px; margin-top: 0px; position: absolute; top:10px; left: 0; }
-	div.p_Expe ul li span:first-child{ font-weight: bold; }
-	div.p_Expe ul li span:last-child{ line-height: 18px; color: #999999; }
-	div.p_Expe ul li span, div.p_Expe ul li span.c_name, div.p_Expe ul li span.c_local{ display: block; width: 100%; padding-left: 15px;}
-}
-
-div.p_Edu{ padding: 0 10px; }
-div.p_Edu div{background-color:#3E3E3E; border-radius: 5px; padding: 40px 30px;}
-div.p_Edu ul{}
-div.p_Edu ul li{ text-align: left; }
-div.p_Edu ul li::before{ content: ''; display: inline-block; width: 4px; height: 4px; margin-bottom: 3px; margin-right: 10px; background-color:#F5F5F5; border-radius: 2px; }
-div.p_Edu ul li span{ margin-right: 30px; }
-div.p_Edu ul li span:first-child{ font-weight: bold; }
-div.p_Edu ul li span:last-child{ margin-right: 0; }
-@media (max-width: 576px) { 
-	div.p_Edu div{padding: 20px;}
-	div.p_Edu ul li{position: relative;}
-	div.p_Edu ul li::before{ margin-bottom: 0px; position: absolute; left: 0; top:10px; }
-	div.p_Edu ul li span{ display: block; padding-left: 15px; line-height: 20px; }
-	div.p_Edu ul li span:first-child{ font-weight: bold; }
 }
 
 div.p_Works{ padding: 0 10px; }
@@ -251,7 +221,7 @@ div.p_Works div.gallery div.gbox div button:hover::before{content: "Detail"; col
 div.p_Contact{}
 div.p_Contact div.form{width: 820px; margin: 0 auto;}
 div.p_Contact div.form div{ display: flex; align-items: stretch; justify-content: stretch; margin-bottom: 10px; }
-div.p_Contact div.form div label{ background-color:#3E3E3E; line-height: 50px; border-radius: 5px; width: 20%; margin-right: 10px; text-align: left; padding-left: 20px; }
+div.p_Contact div.form div label{ background-color:#3E3E3E; line-height: 50px; border-radius: 5px; width: 20%; margin-right: 10px; text-align: left; padding-left: 20px; font-weight: bold; }
 div.p_Contact div.form div input[type=text]{ height: 50px; padding: 0 10px; }
 div.p_Contact div.form div input[type=text], div.p_Contact div.form div textarea{ border: none; border-radius: 5px; width: 80%; color: #555555; }
 div.p_Contact div.form div textarea{ padding: 10px;  }
@@ -267,19 +237,14 @@ div.p_Contact button:hover{ background-color:#58BDAD; }
 	div.p_Contact div.form div input[type=text]::placeholder, div.p_Contact div.form div textarea::placeholder { padding-left: 10px; }
 }
 
-div.modal-wrapper, div.modal-wrapper_01, div.modal-wrapper_02, div.modal-wrapper_03{ position: fixed; z-index: 10; left: 0; top:0; right: auto; bottom:0; width: 100%; height: 100%; 
+div.modal-wrapper{ position: fixed; z-index: 10; left: 0; top:0; right: auto; bottom:0; width: 100%; height: 100%; 
 	background-color:rgba(0, 0, 0,.7); display:flex; align-items: center; justify-content: center; padding: 20px; }
-div.modal{width: 100%; height: 100%; background-color:#171717; border:rgba(255, 255, 255, .2) solid 1px; position:relative;border-radius: 20px; padding: 40px;}
-div.modal button.btn_close{ position: absolute; top: -20px; right: 0px;
-	margin-left: auto; width: 50px; height: 50px; display: inline-block; border-radius: 25px; border: none; 
-	background-color: transparent; box-shadow: 0 0 6px rgba(0, 0, 0, .7); 
-}
-div.modal button.btn_close img{ width: 100%; }
+div.modal{max-width: 1000px; margin: 0 auto; height: 100%; background-color:#171717; border:rgba(255, 255, 255, .2) solid 1px; position:relative;border-radius: 20px; padding: 40px;}
+div.modal button.btn_close{ position: absolute; top: 0px; right: 0px;
+width: 50px; height: 50px; display: inline-block; border-radius: 25px; border: none;	background-color: transparent;}
+div.modal button.btn_close img{ width:40px; }
 div.modal div.conts{ position:relative; height: 100%; }
-div.modal div.m-head{ position: absolute; top: 0; left: 0; width: 100%; background-color:#171717; height: 40px; }
-div.modal div.m-head h2{ position: absolute; top: -15px; left: 0px; color: #67dbc9; font-size: 30px; font-weight: 600; }
-div.modal div.m-head hr{ position: absolute; bottom: 0px; left: 0px; display: block; width: 100%; border: none; border-bottom: 1px solid #484848; box-shadow: 0 3px 3px rgb(0 0 0 / 50%); }
-div.modal div.conts div.page{overflow: hidden; overflow-y: auto; height: 100%;padding: 30px;padding-top: 80px;}
+div.modal div.conts div.page{overflow: hidden; overflow-y: auto; height: 100%; background-color: transparent;}
 
 div.modal div.conts div.page::-webkit-scrollbar {
     width: 10px;
@@ -295,6 +260,51 @@ div.modal div.conts div.page::-webkit-scrollbar-track {
     border-radius: 0px;
     /*box-shadow: inset 0px 0px 5px white;*/
   }
+
+@media (max-width: 769px) {
+	div.modal-wrapper{ padding: 0; }
+ div.modal{ width: 100%; border-radius: 0; padding-left: 20px; padding-right: 20px; }
+}
+
+div.p_Expe h1{ color: #f5f5f5; text-align: center; }
+div.p_Expe h2, div.p_Edu h2{  color: #67DBC9; font-size: 16px; }
+
+div.p_Expe{}
+div.p_Expe div, div.p_Edu div{background-color:#3E3E3E; border-radius: 5px; padding: 30px; color:#d7d7d7;}
+div.p_Expe ul{}
+div.p_Expe ul li{ text-align: left; padding-top: 20px; border-bottom: 0px solid #555555; display: flex; flex-wrap: wrap; align-items: flex-start; position: relative; }
+div.p_Expe ul li:first-child{ padding-top: 0px }
+div.p_Expe ul li::before{ content: ''; display: inline-block; width: 4px; height: 4px; margin-bottom: 3px; margin-right: 10px; margin-top: 10px; background-color: #67DBC9; border-radius: 2px; }
+div.p_Expe ul li span{ margin-right: 30px; display: inline-block; line-height: 25px; }
+div.p_Expe ul li span:first-child{ font-weight: bold; }
+div.p_Expe ul li span:last-child{ margin-right: 0; }
+div.p_Expe ul li span.c_name{ width: 100px; }
+div.p_Expe ul li span.c_local{ width: 40px; }
+@media (max-width: 769px) {
+	div.p_Expe div{padding: 20px;}
+	div.p_Expe ul li{ padding-top: 0;}
+	div.p_Expe ul li:first-child{ padding-top: 0; }
+	div.p_Expe ul li:last-child{ padding-bottom: 0; }
+	div.p_Expe ul li::before{ margin-bottom: 3px; margin-right: 10px; margin-top: 0px; position: absolute; top:10px; left: 0; }
+	div.p_Expe ul li span:first-child{ font-weight: bold; }
+	div.p_Expe ul li span:last-child{ line-height: 18px; color: #999999; }
+	div.p_Expe ul li span, div.p_Expe ul li span.c_name, div.p_Expe ul li span.c_local{ display: block; width: 100%; padding-left: 15px;}
+}
+
+div.p_Edu{ }
+div.p_Edu ul{}
+div.p_Edu ul li{ text-align: left; }
+div.p_Edu ul li::before{ content: ''; display: inline-block; width: 4px; height: 4px; margin-bottom: 3px; margin-right: 10px; background-color:#67DBC9; border-radius: 2px; }
+div.p_Edu ul li span{ margin-right: 30px; }
+div.p_Edu ul li span:first-child{ font-weight: bold; }
+div.p_Edu ul li span:last-child{ margin-right: 0; }
+@media (max-width: 769px) { 
+	div.p_Edu div{padding: 20px;}
+	div.p_Edu ul li{position: relative;}
+	div.p_Edu ul li::before{ margin-bottom: 0px; position: absolute; left: 0; top:10px; }
+	div.p_Edu ul li span{ display: block; padding-left: 15px; line-height: 20px; }
+	div.p_Edu ul li span:first-child{ font-weight: bold; }
+}
 
 /* accordion */
 
@@ -338,7 +348,7 @@ div.modal div.conts div.page::-webkit-scrollbar-track {
 .accordion__btn.bg_4{background-image: url(../img/arc_4.svg); }
 .accordion__btn:hover {
   color: var(--color-purple);
-  background-color: inherit;
+  background-color: #171717;
 }
 
 .accordion__item--active .accordion__btn {
@@ -426,7 +436,7 @@ div.modal div.conts div.page::-webkit-scrollbar-track {
 }
 
 @media (max-width: 576px) { 
-	.accordion__btn { height: 300px; background-position: -50% 0px; }
+	.accordion__btn { height: 300px; background-position: -50% -70px; }
 	.accordion__caption{ display: inline-block; padding: 0; position: relative; }
 	.accordion__caption div{ width: 100%; }
 	.accordion__caption div.title{ font-size: 13px; }

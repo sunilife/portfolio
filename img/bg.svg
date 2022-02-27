@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="2161" viewBox="0 0 1920 2161">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_285" data-name="사각형 285" width="1920" height="2161" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.491" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1f5048"/>
+      <stop offset="0.67" stop-color="#1d403b"/>
+      <stop offset="1" stop-color="#171717" stop-opacity="0.69"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1f5048"/>
+      <stop offset="1" stop-color="#171717"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#171717"/>
+      <stop offset="0.941" stop-color="#3c6761"/>
+      <stop offset="1" stop-color="#41726b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.509" y1="1" y2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="마스크_그룹_92" data-name="마스크 그룹 92" clip-path="url(#clip-path)">
+    <g id="그룹_292" data-name="그룹 292">
+      <path id="패스_244" data-name="패스 244" d="M-1934,878.727-14,2807.969V1817.061L-1934,0Z" transform="translate(1934 -647.364)" fill="url(#linear-gradient)"/>
+      <path id="패스_238" data-name="패스 238" d="M-168,894-1023.691,0H-1934l891.254,894Z" transform="translate(2088)" fill="url(#linear-gradient-2)"/>
+      <g id="그룹_290" data-name="그룹 290">
+        <g id="그룹_291" data-name="그룹 291" transform="translate(285 -67)">
+          <path id="패스_243" data-name="패스 243" d="M-17.031,1048.485-1023.691,0H-1934L-17.031,1918.182Z" transform="translate(1934)" fill="url(#linear-gradient-3)"/>
+        </g>
+        <g id="그룹_289" data-name="그룹 289">
+          <path id="패스_243-2" data-name="패스 243" d="M-17.031,1048.485-1023.691,0H-1934L-17.031,1918.182Z" transform="translate(1934)" fill="url(#linear-gradient-3)"/>
+          <path id="패스_242" data-name="패스 242" d="M-168,894-1023.691,0H-1934L-168,1772.727Z" transform="translate(2088)" fill="url(#linear-gradient-5)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

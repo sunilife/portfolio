@@ -19,24 +19,15 @@
 <script type="text/javascript">
 
 	$(document).ready(function(){
-		$(".load_overlay, .load_overlay_01, .load_overlay_02, .load_overlay_03").click(function(){
+		$(".btn_resume").click(function(){
 			$("html").css("height","100%");
 			$("html").css("overflow","auto");
 			$("body").css("height","100%");
 			$("body").css("overflow","auto");
 		});
 
-		$(".load_overlay").click(function(){
+		$(".btn_resume").click(function(){
 			$(".modal-wrapper").show();
-		});
-		$(".load_overlay_01").click(function(){
-			$(".modal-wrapper_01").show();
-		});
-		$(".load_overlay_02").click(function(){
-			$(".modal-wrapper_02").show();
-		});
-		$(".load_overlay_03").click(function(){
-			$(".modal-wrapper_03").show();
 		});
 
 		$(".btn_close").click(function(){
@@ -64,14 +55,36 @@
 				<div class="hamburg"><img src="img/ic_hamburg.svg"/></div>
 				<div class="gnb">
 					<ul>
-						<li>About</li>
-						<li>Skills</li>
-						<li>Works</li>
-						<li>Contact</li>
+						<li onclick="anC1()">About</li>
+						<li onclick="anC2()">Skills</li>
+						<li onclick="anC3()">Works</li>
+						<li onclick="anC4()">Contact</li>
 					</ul>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			function anC1() {
+				document.getElementById('about').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+			function anC2() {
+				document.getElementById('skills').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+			function anC3() {
+				document.getElementById('works').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+			function anC4() {
+				document.getElementById('contact').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+		</script>
 
 		<script>
 			 window.onscroll = function() {scrollFunction()};
@@ -118,33 +131,37 @@
 		</script>
 
 		<!-- contents -->
-		<div class="contents">
+		<div class="contents" id="about">
 
 			<div class="wr_cont">
 				<!-- ------------------------------------ -->
 				<div class="p_about">
-					<p>
-						Portfolio<br/>
-						UI/UX Desginer<br/>
-						SoonHee, Min<br/>
-						<span style="font-size:50%;">Make to easy for anyone!</span>
-
-					</p>
-					<br/>
-					<br/>
-					<dl>
-						<dt>E-mail.</dt>
-						<dd>sudalmin@naver.com</dd>
-					</dl>
-					<br/>
-					<dl>
-						<dt>Cell-Phone.</dt>
-						<dd>010-5479-1493</dd>
-					</dl>
+						<p class="txt">
+							UI/UX Desginer<br>
+							SoonHee, Min<br>
+							<span style="font-size:50%; font-weight: 500;">Make it use to easy for everyone!</span>
+						</p>
+						<br>
+						<br>
+						<p class="me"><img src="img/me3.png"/></p>
+						<br>
+						<br>
+						<div class="con">
+							<dl>
+								<dt>E-mail.</dt>
+								<dd>sudalmin@naver.com</dd>
+							</dl>
+							<dl>
+								<dt>Cell-Phone.</dt>
+								<dd>010-5479-1493</dd>
+							</dl>
+						</div>
+						<button type="button" class="btn_resume">이력 상세보기 <img src="img/arrw.svg" /></button>
+					
 				</div>
 
 				<!-- ------------------------------------ -->
-				<div class="p_skill">
+				<div class="p_skill" id="skills">
 					<h2>Skills</h2>
 					<ul>
 						<li>
@@ -223,243 +240,157 @@
 				</div>
 
 				<!-- ------------------------------------ -->
-				<div class="p_Expe">
-					<h2>Experience</h2>
-					<div>
-						<ul>
-							<li>
-								<span>2015 / 08 ~ 2021 / 12</span>
-								<span class="c_name">Qubesoft</span>
-								<span class="c_local">과장</span>
-								<span>
-									- 태양광 발전소 모니터링 관련 사이트 및 인쇄물 디자인 병행.<br/>
-									- 여행사 신규 웹사이트 제작 및 관리.<br/>
-									- 모바일/웹 디자인, 반응형 코딩
-								</span>
-							</li>
-							<li>
-								<span>2014 / 08 ~ 2014 / 12</span>
-								<span class="c_name">금성출판사</span>
-								<span class="c_local">사원</span>
-								<span>
-									- 4개월 계약직.<br/>
-									- 이벤트 웹사이트( 디자인, 코딩 ) 2개 제작. 
-								</span>
-							</li>
-							<li>
-								<span>2011 / 08 ~ 2012 / 04</span>
-								<span class="c_name">N Tour</span>
-								<span class="c_local">과장</span>
-								<span>
-									- 여행사( 인하우스 디자인 ).<br/>
-									- 웹사이트 신축 및 관리, 편집 디자인 병행.  
-								</span>
-							</li>
-							<li>
-								<span>2010 / 02 ~ 2011 / 07</span>
-								<span class="c_name">NEO Branding</span>
-								<span class="c_local">대리</span>
-								<span>
-									- 신규 웹사이트 제작( 디자인 ).<br/>
-									- 웹에이젼시 신규 사이트 제작 및 관리. 
-								</span>
-							</li>
-							<li>
-								<span>2009 / 03 ~ 2010 / 02</span>
-								<span class="c_name">NCCJ Solution</span>
-								<span class="c_local">대리</span>
-								<span>
-									- 신규 웹사이트 제작( 디자인, 코딩 ).<br/>
-									- 솔루션 기반 템플렛 사이트와 신규 사이트 제작. 
-								</span>
-							</li>
-							<li>
-								<span>2007 / 02 ~ 2009 / 03</span>
-								<span class="c_name">Beauty Nia</span>
-								<span class="c_local">사원</span>
-								<span>
-									- 신규 웹사이트 제작( 디자인, 코딩 ).<br/>
-									- 판촉물( 전단지, 명함, 현수막, etc ) 편집디자인 병행. 
-								</span>
-							</li>
-						</ul>
-
-						<!-- <table>
-							<colgroup>
-								<col style="width: 20%;">
-								<col style="width: 10%;">
-								<col style="width: 10%;">
-								<col style="width: 60%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th>기간</th>
-									<th>회사명</th>
-									<th>직급</th>
-									<th>업무 내용</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>2015 / 08 ~ 2021 / 12</td>
-									<td>Qubesoft</td>
-									<td>과장</td>
-									<td class="t_left">
-										- 태양광 발전소 모니터링 관련 사이트 및 인쇄물 디자인 병행.<br/>
-										- 여행사 신규 웹사이트 제작 및 관리.<br/>
-										- 모바일/웹 디자인, 반응형 코딩
-									</td>
-								</tr>
-								<tr>
-									<td>2014 / 08 ~ 2014 / 12</td>
-									<td>금성출판사</td>
-									<td>사원</td>
-									<td class="t_left">
-										- 4개월 계약직.<br/>
-										- 이벤트 웹사이트( 디자인, 코딩 ) 2개 제작. 
-									</td>
-								</tr>
-								<tr>
-									<td>2011 / 08 ~ 2012 / 04</td>
-									<td>N Tour</td>
-									<td>과장</td>
-									<td class="t_left">
-										- 여행사( 인하우스 디자인 ).<br/>
-										- 웹사이트 신축 및 관리, 편집 디자인 병행.  
-									</td>
-								</tr>
-								<tr>
-									<td>2010 / 02 ~ 2011 / 07</td>
-									<td>NEO Branding</td>
-									<td>대리</td>
-									<td class="t_left">
-										- 신규 웹사이트 제작( 디자인 ).<br/>
-										- 웹에이젼시 신규 사이트 제작 및 관리. 
-									</td>
-								</tr>
-								<tr>
-									<td>2009 / 03 ~ 2010 / 02</td>
-									<td>NCCJ Solution</td>
-									<td>대리</td>
-									<td class="t_left">
-										- 신규 웹사이트 제작( 디자인, 코딩 ).<br/>
-										- 솔루션 기반 템플렛 사이트와 신규 사이트 제작. 
-									</td>
-								</tr>
-								<tr>
-									<td>2007 / 02 ~ 2009 / 03</td>
-									<td>Beauty Nia</td>
-									<td>사원</td>
-									<td class="t_left">
-										- 신규 웹사이트 제작( 디자인, 코딩 ).<br/>
-										- 판촉물( 전단지, 명함, 현수막, etc ) 편집디자인 병행. 
-									</td>
-								</tr>
-							</tbody>
-						</table> -->
-					</div>
-				</div>
-
-				<!-- ------------------------------------ -->
-				<div class="p_Edu">
-					<h2>Education</h2>
-					<div>
-						<ul>
-							<li>
-								<span>2001 / 03 ~ 2003 / 03</span>
-								<span>한양여자대학</span>
-								<span>일러스트레이션과 (졸업)</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- ------------------------------------ -->
-				<div class="p_Works">
+				<div class="p_Works" id="works">
 					<h2>Works</h2>
-					<div class="gallery">
-						<div class="gbox pf_01">
-							<div>
-								<h3>시크릿몰</h3>
-								<p>네이버 제휴 호텔 예약시스템<br/> 
-									홈페이지(PC, Mobile),<br/>
-									Extranet, Intranet 제작
-								</p>
-								<ul>
-									<li>제작년도 : 2021</li>
-									<li>작업(참여도) : 디자인/퍼블리싱(100%)</li>
-								</ul>
-								<button type="button" class="load_overlay"><span></span></button>
-							</div>
-						</div>
-						<div class="gbox pf_02">
-							<div>
-								<h3>네이버 국내여행 패키지 예약시스템</h3>
-								<p>
-									홈페이지(PC, Mobile),<br/>
-									Extranet, Intranet 제작
-								</p>
-								<ul>
-									<li>제작년도 : 2021</li>
-									<li>작업(참여도) : 디자인/퍼블리싱(100%)</li>
-								</ul>
-								<button type="button" class="load_overlay_01"><span></span></button>
-							</div>
-						</div>
-						<div class="gbox pf_03">
-							<div>
-								<h3>태양광발전 모니터링</h3>
-								<p>
-									홈페이지/APP(PC, Mobile)
-								</p>
-								<ul>
-									<li>제작년도 : 2015~2021</li>
-									<li>작업(참여도) : 디자인/퍼블리싱(100%)</li>
-								</ul>
-								<button type="button" class="load_overlay_02"><span></span></button>
-							</div>
-						</div>
-						<div class="gbox pf_04">
-							<div>
-								<h3>Basic Style Guide</h3>
-								<p>
-									기본 스타일 가이드
-								</p>
-								<button type="button" class="load_overlay_03"><span></span></button>
-							</div>
-						</div>
+					<div class="accordion">
+						<div class="accordion__item">
+						    <button class="accordion__btn bg_1">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>네이버 호텔 제휴 시크릿몰</h3>
+								      <p>네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</p>
+								      <ul>
+								      	<li><span>기간</span><span>2021-01 ~  2021-12</span></li>
+								      	<li><span>사이트</span><span>https://hotel.naver.com/hotels/main</span></li>
+								      	<li><span>참여내용</span><span>- 프론트 / 백엔드 디자인<br>
+								      		- 프론트 반응형과 백엔드 퍼블리싱<br>
+								      		- 네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</span></li>
+								      </ul>
+								  </div>
+							      <!-- <div class="img_ani"><img src="img/arc_1.png"/></div> -->
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<h4>Front</h4>
+						      	<img src="img/img_hotel_0.png"/>
+						      	<br>
+						      	<br>
+						      	<h4>Backend</h4>
+						      	<img src="img/img_hotel_1.png"/>
+						      </p>
+						    </div>
+					  	</div>
+					  	<div class="accordion__item">
+						    <button class="accordion__btn bg_2">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>네이버 국내/해외 여행 패키지</h3>
+								      <p>네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</p>
+								      <ul>
+								      	<li><span>기간</span><span>2021-01 ~  2021-12</span></li>
+								      	<li><span>사이트</span><span>https://pkgtour.naver.com/</span></li>
+								      	<li><span>참여내용</span><span>- 프론트 / 백엔드 디자인<br>
+								      		- 프론트 반응형과 백엔드 퍼블리싱<br>
+								      		- 네이버 국내/해외 여행 패키지 실시간 예약 시스템</span></li>
+								      </ul>
+								  </div>
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<h4>Front / Backend</h4>
+						      	<img src="img/img_pkg_1.png"/>
+						      </p>
+						    </div>
+					  	</div>
+					  	<div class="accordion__item">
+						    <button class="accordion__btn bg_3">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>태양광발전 모니터링</h3>
+								      <p>네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</p>
+								      <ul>
+								      	<li><span>기간</span><span>2015-08 ~  2021-12</span></li>
+								      	<li><span>사이트</span><span>http://www.solarcube.co.kr/</span></li>
+								      	<li><span>참여내용</span><span>- 홈페이지<br>
+								      		- 웹/로컬 모니터링 사이트 디자인, 퍼블리싱<br>
+								      		-태양광발전 모니터링 관련 홈페이지, 통합 모니터링, 웹/앱, 인하우스 디자인 제작</span></li>
+								      </ul>
+								  </div>
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<h4>Page</h4>
+						      	<img src="img/img_qb_0.png"/>			      	
+						      </p>
+						    </div>
+					  	</div>
+					  	<div class="accordion__item">
+						    <button class="accordion__btn bg_4">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>제작 가이드</h3>
+								      <p>스타일 가이드</p>
+								  </div>
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<img src="img/img_st_0.png"/>
+						      </p>
+						    </div>
+					  	</div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					// select all accordion items
+					const accItems = document.querySelectorAll(".accordion__item");
+
+					// add a click event for all items
+					accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+
+					function toggleAcc() {
+					  // remove active class from all items exept the current item (this)
+					  accItems.forEach((item) => item != this ? item.classList.remove("accordion__item--active") : null
+					  );
+
+					  // toggle active class on current item
+					  if (this.classList != "accordion__item--active") {
+					    this.classList.toggle("accordion__item--active");
+					  }
+					}
+				</script>
 
 				<!-- ------------------------------------ -->
-				<div class="p_Contact">
+				<div class="p_Contact" id="contact">
 					<h2>Contact</h2>
-					<div class="form">
-						<div>
-							<label>Name</label>
-							<input type="text" placeholder="성함 또는 회사 이름을 기재해주세요.">
+						<form action="MAILTO:sudalmin@naver.com" method="post" enctype="text/plain">
+						<div class="form">
+							<div>
+								<label for="Name">Name</label>
+								<input type="text" name="Name" placeholder="성함 또는 회사 이름을 기재해주세요.">
+							</div>
+							<div>
+								<label for="Phone">Phone</label>
+								<input type="text" name="Phone" placeholder="연락가능한 연락처를 기재해주세요.">
+							</div>
+							<div>
+								<label for="Email">E-mail</label>
+								<input type="text" name="Email" placeholder="이메일 주소를 기재해주세요.">
+							</div>
+							<div>
+								<label for="Message">Message</label>
+								<textarea rows="10" name="Message" placeholder="간단한 문의 사항을 기재해주세요."></textarea>
+							</div>
 						</div>
+						<br>
 						<div>
-							<label>Phone</label>
-							<input type="text" placeholder="연락가능한 연락처를 기재해주세요.">
+							<button type="submit">SEND</button>
 						</div>
-						<div>
-							<label>E-mail</label>
-							<input type="text" placeholder="이메일 주소를 기재해주세요.">
-						</div>
-						<div>
-							<label>Message</label>
-							<textarea rows="10" placeholder="간단한 문의 사항을 기재해주세요."></textarea>
-						</div>
-					</div>
-					<br/>
-					<div>
-						<button type="button">SEND</button>
-					</div>
-					<br/>
-					<br/>
+					</form>
+					<br>
+					<br>
 				</div>
-
 			</div>
 		</div>
 		<!-- footer -->
