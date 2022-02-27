@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>Suni - Portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+<link rel="stylesheet" href="css/common2.css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/includeHtml2.js"></script>
+
+</head>
+<body>
+
+<!-- ------------------------------------ -->
+
+<!-- 모달 -->
+<script>includeModal();</script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$(".btn_resume").click(function(){
+			$("html").css("height","100%");
+			$("html").css("overflow","auto");
+			$("body").css("height","100%");
+			$("body").css("overflow","auto");
+		});
+
+		$(".btn_resume").click(function(){
+			$(".modal-wrapper").show();
+		});
+
+		$(".btn_close").click(function(){
+			$(".modal-wrapper").hide();
+			$(".modal-wrapper_01").hide();
+			$(".modal-wrapper_02").hide();
+			$(".modal-wrapper_03").hide();
+			$(".modal-wrapper").hide();
+			$("html").css("height","initial");
+			$("html").css("overflow","auto");
+			$("body").css("height","initial");
+			$("body").css("overflow","auto");
+		});
+	});
+
+</script>
+
+<!-- ------------------------------------ -->
+	<div>
+
+		<!-- header -->
+		<div class="header">
+			<div class="h_wrap">
+				<div class="logo">Suni, MD</div>
+				<div class="hamburg"><img src="img/ic_hamburg.svg"/></div>
+				<div class="gnb">
+					<ul>
+						<li onclick="anC1()">About</li>
+						<li onclick="anC2()">Skills</li>
+						<li onclick="anC3()">Works</li>
+						<li onclick="anC4()">Contact</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function anC1() {
+				document.getElementById('about').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+			function anC2() {
+				document.getElementById('skills').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+			function anC3() {
+				document.getElementById('works').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+			function anC4() {
+				document.getElementById('contact').scrollIntoView({
+		            behavior: 'smooth'
+		        });
+			}
+		</script>
+
+		<script>
+			 window.onscroll = function() {scrollFunction()};
+
+			// var media = window.matchMedia(mediaQueryString);
+			
+			let vHeader = document.querySelector(".header");
+			let vHwrap = document.querySelector(".h_wrap");
+			let vLogo = document.querySelector(".logo");
+			let vGnb = document.querySelector(".gnb");
+
+			if (matchMedia("screen and (min-width: 576px)").matches) {
+				// 767px 이상에서 사용할 JavaScript
+				function scrollFunction() {
+				  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300 ) {
+				  	vHeader.classList.add("ch_header");
+				  	vHwrap.classList.add("ch_h_wrap");
+				  	vLogo.classList.add("ch_logo");
+				  	vGnb.classList.add("ch_gnb");
+				  } else {
+				  	vHeader.classList.remove("ch_header");
+				  	vHwrap.classList.remove("ch_h_wrap");
+				  	vLogo.classList.remove("ch_logo");
+				  	vGnb.classList.remove("ch_gnb");
+				  }
+				}
+			} else {
+			  // 767px 미만에서 사용할 JavaScript
+			  function scrollFunction() {
+				  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300 ) {
+				  	vHeader.classList.add("ch_header");
+				  	vHwrap.classList.add("ch_h_wrap");
+				  	vLogo.classList.add("ch_logo");
+				  	vGnb.classList.add("ch_gnb");
+				  } else {
+				  	vHeader.classList.remove("ch_header");
+				  	vHwrap.classList.remove("ch_h_wrap");
+				  	vLogo.classList.remove("ch_logo");
+				  	vGnb.classList.remove("ch_gnb");
+				  }
+				}
+			}
+
+		</script>
+
+		<!-- contents -->
+		<div class="contents" id="about">
+
+			<div class="wr_cont">
+				<!-- ------------------------------------ -->
+				<div class="p_about">
+					<p>
+						Portfolio<br>
+						UI/UX Desginer<br>
+						SoonHee, Min<br>
+						<span style="font-size:50%;">Make to easy for anyone!</span>
+
+					</p>
+					<br>
+					<br>
+					<dl>
+						<dt>E-mail.</dt>
+						<dd>sudalmin@naver.com</dd>
+					</dl>
+					<br>
+					<dl>
+						<dt>Cell-Phone.</dt>
+						<dd>010-5479-1493</dd>
+					</dl>
+					<button type="button" class="btn_resume">이력 상세보기 <img src="img/arrw.svg" /></button>
+				</div>
+
+				<!-- ------------------------------------ -->
+				<div class="p_skill" id="skills">
+					<h2>Skills</h2>
+					<ul>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_01"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:90%;"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_02"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:90%;"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_03"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:90%;"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_04"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:80%;"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_05"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:90%;"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_06"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:30%;"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_07"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:25%;"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sbox">
+								<div class="ic_gpro posi_08"></div>
+								<div class="bar">
+									<div class="line"></div>
+									<span style="width:20%;"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- ------------------------------------ -->
+				<div class="p_Works" id="works">
+					<h2>Works</h2>
+					<div class="accordion">
+						<div class="accordion__item">
+						    <button class="accordion__btn bg_1">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>네이버 호텔 제휴 시크릿몰</h3>
+								      <p>네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</p>
+								      <ul>
+								      	<li><span>기간</span><span>2021-01 ~  2021-12</span></li>
+								      	<li><span>사이트</span><span>https://hotel.naver.com/hotels/main</span></li>
+								      	<li><span>참여내용</span><span>- 프론트 / 백엔드 디자인<br>
+								      		- 프론트 반응형과 백엔드 퍼블리싱<br>
+								      		- 네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</span></li>
+								      </ul>
+								  </div>
+							      <!-- <div class="img_ani"><img src="img/arc_1.png"/></div> -->
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<h4>Front</h4>
+						      	<img src="img/img_hotel_0.png"/>
+						      	<br>
+						      	<br>
+						      	<h4>Backend</h4>
+						      	<img src="img/img_hotel_1.png"/>
+						      </p>
+						    </div>
+					  	</div>
+					  	<div class="accordion__item">
+						    <button class="accordion__btn bg_2">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>네이버 국내/해외 여행 패키지</h3>
+								      <p>네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</p>
+								      <ul>
+								      	<li><span>기간</span><span>2021-01 ~  2021-12</span></li>
+								      	<li><span>사이트</span><span>https://pkgtour.naver.com/</span></li>
+								      	<li><span>참여내용</span><span>- 프론트 / 백엔드 디자인<br>
+								      		- 프론트 반응형과 백엔드 퍼블리싱<br>
+								      		- 네이버 국내/해외 여행 패키지 실시간 예약 시스템</span></li>
+								      </ul>
+								  </div>
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<h4>Front / Backend</h4>
+						      	<img src="img/img_pkg_1.png"/>
+						      </p>
+						    </div>
+					  	</div>
+					  	<div class="accordion__item">
+						    <button class="accordion__btn bg_3">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>태양광발전 모니터링</h3>
+								      <p>네이버 제휴 업체 국내/해외 호텔 실시간 예약 시스템</p>
+								      <ul>
+								      	<li><span>기간</span><span>2015-08 ~  2021-12</span></li>
+								      	<li><span>사이트</span><span>http://www.solarcube.co.kr/</span></li>
+								      	<li><span>참여내용</span><span>- 홈페이지<br>
+								      		- 웹/로컬 모니터링 사이트 디자인, 퍼블리싱<br>
+								      		-태양광발전 모니터링 관련 홈페이지, 통합 모니터링, 웹/앱, 인하우스 디자인 제작</span></li>
+								      </ul>
+								  </div>
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<h4>Page</h4>
+						      	<img src="img/img_qb_0.png"/>			      	
+						      </p>
+						    </div>
+					  	</div>
+					  	<div class="accordion__item">
+						    <button class="accordion__btn bg_4">
+						      <div class="accordion__caption">
+						      	  <div class="title">
+								      <h3>제작 가이드</h3>
+								      <p>스타일 가이드</p>
+								  </div>
+							  </div>
+						      <span class="accordion__icon"><img src="img/arco_btn.svg"/></span>
+						    </button>
+
+						    <div class="accordion__content">
+						      <p>
+						      	<img src="img/img_st_0.png"/>
+						      </p>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					// select all accordion items
+					const accItems = document.querySelectorAll(".accordion__item");
+
+					// add a click event for all items
+					accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+
+					function toggleAcc() {
+					  // remove active class from all items exept the current item (this)
+					  accItems.forEach((item) => item != this ? item.classList.remove("accordion__item--active") : null
+					  );
+
+					  // toggle active class on current item
+					  if (this.classList != "accordion__item--active") {
+					    this.classList.toggle("accordion__item--active");
+					  }
+					}
+				</script>
+
+				<!-- ------------------------------------ -->
+				<div class="p_Contact" id="contact">
+					<h2>Contact</h2>
+						<form action="MAILTO:sudalmin@naver.com" method="post" enctype="text/plain">
+						<div class="form">
+							<div>
+								<label for="Name">Name</label>
+								<input type="text" name="Name" placeholder="성함 또는 회사 이름을 기재해주세요.">
+							</div>
+							<div>
+								<label for="Phone">Phone</label>
+								<input type="text" name="Phone" placeholder="연락가능한 연락처를 기재해주세요.">
+							</div>
+							<div>
+								<label for="Email">E-mail</label>
+								<input type="text" name="Email" placeholder="이메일 주소를 기재해주세요.">
+							</div>
+							<div>
+								<label for="Message">Message</label>
+								<textarea rows="10" name="Message" placeholder="간단한 문의 사항을 기재해주세요."></textarea>
+							</div>
+						</div>
+						<br>
+						<div>
+							<button type="submit">SEND</button>
+						</div>
+					</form>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<div>ⓒ Suni, MD. All Rights Reserved.</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
