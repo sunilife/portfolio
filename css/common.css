@@ -280,6 +280,7 @@ div.p_Expe ul li span:first-child{ font-weight: bold; }
 div.p_Expe ul li span:last-child{ margin-right: 0; }
 div.p_Expe ul li span.c_name{ width: 100px; }
 div.p_Expe ul li span.c_local{ width: 40px; }
+div.p_Expe ul li span a{ color: #508FEC; word-break: break-all; }
 @media (max-width: 769px) {
 	div.p_Expe div{padding: 20px;}
 	div.p_Expe ul li{ padding-top: 0;}
@@ -340,7 +341,7 @@ div.p_Edu ul li span:last-child{ margin-right: 0; }
   cursor: pointer;
   transition: 0.1s; height: 400px;
   position: relative;
-  background-repeat: no-repeat; background-position: right;
+  background-repeat: no-repeat; background-position: right; background-size: contain;
 }
 .accordion__btn.bg_1{background-image: url(../img/arc_1.png); }
 .accordion__btn.bg_2{background-image: url(../img/arc_3.png); }
@@ -436,7 +437,7 @@ div.p_Edu ul li span:last-child{ margin-right: 0; }
 }
 
 @media (max-width: 576px) { 
-	.accordion__btn { height: 300px; background-position: -50% -70px; }
+	.accordion__btn { height: 300px; background-position: -50% -70px; background-size: inherit; }
 	.accordion__caption{ display: inline-block; padding: 0; position: relative; }
 	.accordion__caption div{ width: 100%; }
 	.accordion__caption div.title{ font-size: 13px; }

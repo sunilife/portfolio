@@ -10,7 +10,7 @@ function includeModal() {
 					<div class="page">
 						<div class="p_Expe">
 							<br>
-							<h1>이력서</h1>
+							<h1>이력상세</h1>
 							<br>
 							<br>
 							<h2>경력사항</h2>
@@ -73,6 +73,48 @@ function includeModal() {
 									</li>
 								</ul>
 							</div>
+						</div>
+
+						<div class="p_Expe">
+							<br>
+							<br>
+							<br>
+							<h2>포트폴리오</h2>
+							<br>
+							<div>
+								<ul>
+									<li>
+										<span>~ 2022</span>
+										<span><a href="https://sunilife.github.io/portfolio/index.htmls" target="_self">https://sunilife.github.io/portfolio/index.html</a></span>
+									</li>
+									<li>
+										<span>~ 2015</span>
+										<span><a href="http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal">http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal</a></span>
+									</li>
+								</ul>
+							</div>
+			
+						</div>
+
+						<div class="p_Expe">
+							<br>
+							<br>
+							<br>
+							<h2>자격증</h2>
+							<br>
+							<div>
+								<ul>
+									<li>
+										<span>2011 / 10</span>
+										<span>웹디자인 기능사</span>
+									</li>
+									<li>
+										<span>2003 / 03</span>
+										<span>미술실기자격증</span>
+									</li>
+								</ul>
+							</div>
+			
 						</div>
 
 						<div class="p_Edu">
