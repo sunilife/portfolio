@@ -28,17 +28,8 @@ function includeModal() {
 										</span>
 									</li>
 									<li>
-										<span>2014 / 08 ~ 2014 / 12</span>
-										<span class="c_name">금성출판사</span>
-										<span class="c_local">사원</span>
-										<span>
-											- 푸르넷 공부방 사이트 제작<br/>
-											- 독도 지식 홍보 웹사이트 제작<br/>
-										</span>
-									</li>
-									<li>
 										<span>2011 / 08 ~ 2012 / 04</span>
-										<span class="c_name">N Tour</span>
+										<span class="c_name">여행신화</span>
 										<span class="c_local">과장</span>
 										<span>
 											- 홈페이지 관리 여행 상품 페이지 제작<br/>
@@ -68,7 +59,7 @@ function includeModal() {
 										<span class="c_local">사원</span>
 										<span>
 											- 신규 웹사이트 제작( 디자인, 코딩 )<br/>
-											- 안쇄물( 전단지, 명함, 현수막, etc )디자인 병행 
+											- 인쇄물( 전단지, 명함, 현수막, etc )디자인 병행 
 										</span>
 									</li>
 								</ul>
