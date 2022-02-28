@@ -159,8 +159,8 @@ div.p_about p.txt{font-size: 35px; font-weight:bold; line-height: 40px;}
 div.p_about div.con{ display: flex; align-items: center; justify-content: center; }
 div.p_about div.con dl{ font-weight: 500; margin: 0 20px; display: flex; }
 div.p_about div.con dl dt{ color: #67DBC9; font-weight: bold; padding-right: 10px; white-space: nowrap; }
-div.p_about div.con dl dd{ font-weight: bold; letter-spacing: 1px; white-space: nowrap; }
-div.p_about button.btn_resume{ margin: 0 auto; margin-top: 20px; background-color: #555555; color: #67DBC9; height: 50px; display: flex; align-items: center; justify-content: center;
+div.p_about div.con dl dd{ font-weight: bold; letter-spacing: 1px; white-space: nowrap; color: #f5f5f5; }
+div.p_about button.btn_resume{ white-space: nowrap; margin: 0 auto; margin-top: 20px; background-color: #555555; color: #67DBC9; height: 50px; display: flex; align-items: center; justify-content: center;
 	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6); font-weight: bold; padding: 0 30px; border-radius: 5px;border:rgba(103, 219, 201, .5) solid 1px; }
 div.p_about button.btn_resume img{ margin-left: 10px; margin-top: 1px; }
 div.p_about button.btn_resume:hover{ background-color: #333333; border:rgba(103, 219, 201, .2) solid 1px; }
