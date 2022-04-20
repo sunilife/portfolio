@@ -18,7 +18,7 @@ function includeModal() {
 							<div>
 								<ul>
 									<li>
-										<span>2015 / 08 ~ 2021 / 12</span>
+										<span>2015 / 08 ~ 2022 / 01</span>
 										<span class="c_name">Qubesoft</span>
 										<span class="c_local">과장</span>
 										<span>
@@ -28,16 +28,7 @@ function includeModal() {
 										</span>
 									</li>
 									<li>
-										<span>2011 / 08 ~ 2012 / 04</span>
-										<span class="c_name">여행신화</span>
-										<span class="c_local">과장</span>
-										<span>
-											- 홈페이지 관리 여행 상품 페이지 제작<br/>
-											- 여행사 항공권 예약 제작 
-										</span>
-									</li>
-									<li>
-										<span>2010 / 02 ~ 2011 / 07</span>
+										<span>2010 / 03 ~ 2011 / 03</span>
 										<span class="c_name">NEO Branding</span>
 										<span class="c_local">대리</span>
 										<span>
@@ -45,7 +36,7 @@ function includeModal() {
 										</span>
 									</li>
 									<li>
-										<span>2009 / 03 ~ 2010 / 02</span>
+										<span>2008 / 03 ~ 2009 / 08</span>
 										<span class="c_name">NCCJ Solution</span>
 										<span class="c_local">대리</span>
 										<span>
@@ -54,7 +45,7 @@ function includeModal() {
 										</span>
 									</li>
 									<li>
-										<span>2007 / 02 ~ 2009 / 03</span>
+										<span>2007 / 02 ~ 2008 / 01</span>
 										<span class="c_name">Beauty Nia</span>
 										<span class="c_local">사원</span>
 										<span>
