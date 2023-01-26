@@ -18,6 +18,15 @@ function includeModal() {
 							<div>
 								<ul>
 									<li>
+										<span>2022 / 05 ~ </span>
+										<span class="c_name">티윈</span>
+										<span class="c_local">팀장</span>
+										<span>
+											- LG Smart TV App 시니어 홈피트니스 프로그램 PoC 디자인/기획 리딩<br/>
+											- LG 전자 관리운영 디자인
+										</span>
+									</li>
+									<li>
 										<span>2015 / 08 ~ 2022 / 01</span>
 										<span class="c_name">Qubesoft</span>
 										<span class="c_local">과장</span>
@@ -66,12 +75,10 @@ function includeModal() {
 							<div>
 								<ul>
 									<li>
-										<span>~ 2022</span>
 										<span><a href="https://sunilife.github.io/portfolio/index.html" target="_self">https://sunilife.github.io/portfolio/index.html</a></span>
 									</li>
 									<li>
-										<span>~ 2015</span>
-										<span><a href="http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal" target="_blank">http://soonhee.dothome.co.kr/bbs/board.php?bo_table=gal</a></span>
+										<span><a href="https://sunilife.github.io/portfolio/img/portfolio_2023.pdf" download="2023_포트폴리오_민순희">2023_포트폴리오_민순희.pdf</a></span>
 									</li>
 								</ul>
 							</div>
