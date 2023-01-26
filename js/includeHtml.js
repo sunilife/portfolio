@@ -18,11 +18,11 @@ function includeModal() {
 							<div>
 								<ul>
 									<li>
-										<span>2022 / 05 ~ </span>
+										<span>2022 / 05 ~ 2023 / 02</span>
 										<span class="c_name">티윈</span>
 										<span class="c_local">팀장</span>
 										<span>
-											- LG Smart TV App 시니어 홈피트니스 프로그램 PoC 디자인/기획 리딩<br/>
+											- LG Smart TV App 시니어 홈피트니스 PoC프로젝트<br/>
 											- LG 전자 관리운영 디자인
 										</span>
 									</li>
