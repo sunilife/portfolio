@@ -75,7 +75,7 @@ function includeModal() {
 							<div>
 								<ul>
 									<li>
-										<span><a href="https://sunilife.github.io/portfolio/index.html" target="_self">https://sunilife.github.io/portfolio/index.html</a></span>
+										<span><a href="https://sunilife.github.io/portfolio/index.html" target="_self">https://sunilife.github.io/portfolio</a></span>
 									</li>
 									<li>
 										<span><a href="https://sunilife.github.io/portfolio/img/portfolio_2023.pdf" download="2023_포트폴리오_민순희">2023_포트폴리오_민순희.pdf</a></span>
